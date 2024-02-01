@@ -1,7 +1,7 @@
 # Fundamentals of Networking
 
 ## Client-server architecture 
-is a computing model in which the server provides resources and services, and the client accesses and utilizes these resources and services. This architecture is widely used in networking and distributed computing environments. Here are the key components and characteristics of client-server architecture:
+architecture of a computer network in which many clients (remote processors) request and receive service from a centralized server (host computer). Client computers provide an interface to allow a computer user to request services of the server and to display the results the server returns. Here are the key components and characteristics of client-server architecture:
 
 1. **Client:** The client is the end-user device or application that requests services or resources from the server. Clients can be desktop computers, laptops, mobile devices, or even other servers. Clients initiate communication with the server to request data, processing, or other services.
 
