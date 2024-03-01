@@ -1,7 +1,7 @@
 ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/de6846f0-20c0-4fc5-bf58-b33b87747bc2)
 
 
-## The Foundation of Internet Architecture**
+## **The Foundation of Internet Architecture**
 
 **Introduction:**
 At the bedrock of Internet architecture lies the Link layer, the closest interface to the physical network media. Positioned as the "lowest layer," it encompasses the transmission of data through wires, fiber optic cables, or even radio signals. This layer is pivotal in understanding how information begins its journey from a source computer to its destination.
