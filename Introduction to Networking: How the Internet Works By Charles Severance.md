@@ -1,6 +1,43 @@
 ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/de6846f0-20c0-4fc5-bf58-b33b87747bc2)
 
+
 # **Chapter 2 Network Architecture**
+
+### **Network Architecture Overview: Four-Layer TCP/IP Model**
+
+To design and construct a complex system like the Internet, engineers adopt an approach of breaking down the overarching problem into smaller, manageable subproblems. The architects of the initial internets identified four fundamental areas of engineering, each addressing a specific aspect of the network. These areas are named and organized into layers, forming the foundation of the Internet architecture:
+
+1. **Link Layer:**
+   - **Function:** Connects the computer to the local network, managing data transmission over wired or wireless connections.
+   - **Responsibility:** Handling the physical network media, such as cables or radio signals.
+   - **Example:** Wired Ethernet, WiFi, cellular networks.
+
+2. **Internetwork Layer:**
+   - **Function:** Determines the best route for data packets from the source to the destination across multiple networks.
+   - **Responsibility:** Addresses routing and forwarding of packets, connecting different networks.
+   - **Example:** Internet Protocol (IP) is used to implement this layer.
+
+3. **Transport Layer:**
+   - **Function:** Ensures reliable data transfer between devices, managing end-to-end communication.
+   - **Responsibility:** Handling segmentation, reassembly, error detection, and flow control.
+   - **Example:** Transport Control Protocol (TCP) is employed for reliable communication.
+
+4. **Application Layer:**
+   - **Function:** Facilitates networked applications and user interactions.
+   - **Responsibility:** Encompasses various applications that end-users engage with, such as web browsers and email clients.
+   - **Example:** Web browsers, file transfer applications.
+
+**TCP/IP Model Visualization:**
+   - The layers are represented as a stack, with the Link layer at the bottom and the Application layer at the top.
+   - Visualized as a model with four layers, known informally as the "TCP/IP model."
+
+**Protocol Implementation:**
+   - The model is informally referred to as the "TCP/IP model" due to the implementation of Transport Control Protocol (TCP) for the Transport layer and Internet Protocol (IP) for the Internetwork layer.
+
+**Layered Approach:**
+   - The layered structure simplifies the engineering process, allowing different groups to independently work on specific layers before integrating them to solve the overarching problem.
+
+In the subsequent sections, each layer will be examined in more detail, starting from the bottom layer (Link layer).
 
 
 In the intricate world of computer networking, understanding the layers that facilitate seamless communication between devices is essential. This article provides a comprehensive exploration of the Link, Internetwork, Transport, and Application layers, shedding light on their roles, interactions, and the technologies that underpin them.
