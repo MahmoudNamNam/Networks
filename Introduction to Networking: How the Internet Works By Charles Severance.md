@@ -5,7 +5,10 @@
 
 ### **Network Architecture Overview: Four-Layer TCP/IP Model**
 
-To design and construct a complex system like the Internet, engineers adopt an approach of breaking down the overarching problem into smaller, manageable subproblems. The architects of the initial internets identified four fundamental areas of engineering, each addressing a specific aspect of the network. These areas are named and organized into layers, forming the foundation of the Internet architecture:
+To design and construct a complex system like the Internet, engineers adopt an approach of breaking down the overarching problem into smaller, manageable subproblems. The architects of the initial internets identified **four** fundamental areas of engineering, each addressing a specific aspect of the network. These areas are named and organized into layers, forming the foundation of the Internet architecture:
+
+![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/4170c548-8728-49cb-9cc8-64d1867b8c8a)
+
 
 1. **Link Layer:**
    - **Function:** Connects the computer to the local network, managing data transmission over wired or wireless connections.
@@ -39,7 +42,7 @@ To design and construct a complex system like the Internet, engineers adopt an a
 
 In the subsequent sections, each layer will be examined in more detail, starting from the bottom layer (Link layer).
 
-
+-----------
 In the intricate world of computer networking, understanding the layers that facilitate seamless communication between devices is essential. This article provides a comprehensive exploration of the Link, Internetwork, Transport, and Application layers, shedding light on their roles, interactions, and the technologies that underpin them.
 
 ### **1. Introduction: Unveiling the Layers**
