@@ -485,7 +485,7 @@ The coordination method of "Carrier Sense Multiple Access with Collision Detecti
 
 ----
 
-### **3.3 Coordination in Other Link Layers:**
+## **3.3 Coordination in Other Link Layers:**
 
 1. **Alternative Approach for High Efficiency:**
    - In link layers with numerous transmitting stations requiring near 100% efficiency, a token-based approach is adopted for coordination. 🔄🔗🚀
@@ -527,3 +527,27 @@ The coordination method of "Carrier Sense Multiple Access with Collision Detecti
 ### **Conclusion:**
 
 The choice between token-based coordination and CSMA/CD depends on the specific characteristics of the link layer and the network environment. Token systems are advantageous for high-efficiency scenarios, particularly over longer distances or expensive mediums. In contrast, CSMA/CD excels in providing effective network access in settings with numerous stations sharing the medium in short bursts, such as WiFi in everyday spaces. 🔄🔗🤔
+
+----
+
+## **Glossary: Link Layer Coordination**
+
+1. **Base Station:**
+   - *Definition:* The initial router responsible for handling packets as they are forwarded to the Internet.
+   - *Usage:* Often referred to as the "base station" or "gateway." 🌐🔗🏠
+
+2. **Broadcast:**
+   - *Definition:* Transmitting a packet in a manner that ensures all stations within a local area network receive the packet.
+   - *Usage:* Broadcasting is a method for wide dissemination of information within a network. 📡🔄📢
+
+3. **Gateway:**
+   - *Definition:* A router connecting a local area network to a broader network, such as the Internet. Computers sending data outside the local network forward their packets to the gateway.
+   - *Usage:* The gateway facilitates communication between devices within the local network and the wider network. 🌐🔗🚪
+
+4. **MAC Address:**
+   - *Definition:* An address assigned to network hardware during the device's manufacturing process.
+   - *Usage:* MAC addresses uniquely identify network devices, serving as "from" or "to" addresses for transmitted packets. 🏷️📡🔄
+
+5. **Token:**
+   - *Definition:* A technique enabling multiple computers to share the same physical media without collisions. Each computer must await the token before sending data.
+   - *Usage:* Token systems provide a structured method for preventing simultaneous transmissions, ensuring orderly data transfer. 🔄🎫📡
