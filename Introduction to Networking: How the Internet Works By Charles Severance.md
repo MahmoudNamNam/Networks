@@ -74,7 +74,7 @@ In the subsequent sections, each layer will be examined in more detail, starting
    - If the network is clear, the computer starts sending its data.
    - The computer listens while sending to detect collisions.
    - In the event of a collision, both computers stop, wait, and retry transmission after different waiting periods.
-   3. **After Transmission:**
+3. **After Transmission:**
    - After sending a packet, a computer pauses to allow other waiting computers a chance to send data.
    - If another computer senses the pause and starts sending, the original computer waits until the transmission is complete before attempting to send again.
 
@@ -85,12 +85,12 @@ In the subsequent sections, each layer will be examined in more detail, starting
 
 ### **Shared and Non-Shared Link Layers:**
 1. **Shared Connections:**
-   - Technologies like cellular, WiFi, satellite, and cable modem use CSMA/CD for fair access.
+   - Technologies like cellular, WiFi, satellite, and cable modems use CSMA/CD for fair access.
    - Multiple computers share the same network connection.
 
 2. **Non-Shared Connections:**
    - Fiber optic cables and leased lines are generally not shared.
-   - Used for connections between routers, forming part of the Link layer.
+   - Typically not shared among multiple users simultaneously.
 
 ### **Transmission Across Multiple Links (Hops):**
    - To move data over long distances, it passes through multiple routers connected by various link layers.
@@ -103,32 +103,51 @@ In the subsequent sections, each layer will be examined in more detail, starting
 
 
 -----------
-In the intricate world of computer networking, understanding the layers that facilitate seamless communication between devices is essential. This article provides a comprehensive exploration of the Link, Internetwork, Transport, and Application layers, shedding light on their roles, interactions, and the technologies that underpin them.
+### **2.2 Internetwork Layer (IP) Overview:**
 
-### **1. Introduction: Unveiling the Layers**
-The foundation of computer networking is built upon four layers – Link, Internetwork, Transport, and Application. Each layer collaborates to enable the swift and reliable movement of data across networks.
+1. **Role of Routers:**
+   - The Internetwork Layer, represented by IP (Internet Protocol), comes into play once a packet reaches a router.
+   - Routers determine the best route for the packet based on its destination address.
 
-### **2. The Link Layer: Connecting Locally**
-The Link layer is the bridge connecting computers to local networks. It tackles the encoding and transmission of data, crucial for both wired and wireless connections. Techniques like CSMA/CD ensure fair access in shared networks, emphasizing the importance of cooperation and efficient data sharing.
+2. **Routing Approach:**
+   - Given the vast number of destination computers, routers don't have detailed information about every possible destination.
+   - Routers make educated guesses on how to move the packet closer to its destination.
 
-### **3. The Internetwork Layer (IP): Navigating the Internet**
-IP, the Internetwork layer, takes charge once data traverses the first link. Routers play a key role, making educated guesses to forward packets toward their destination. Adaptability is highlighted, with routers quickly rerouting around outages or slowdowns, ensuring data reaches its destination efficiently.
+3. **Progressive Knowledge:**
+   - As the packet progresses through routers, each router has a better understanding of the packet's destination.
 
-### **4. The Transport Layer (TCP): Ensuring Reliability**
-TCP steps in to ensure reliable data delivery. Acknowledgments, window sizes, and adaptive strategies are employed to handle packet loss, delays, and network limitations. This layer bridges the gap between the Internetwork layer and the end-user applications.
+### **Analogy to Traveling:**
 
-### **5. The Application Layer: Building Networked Applications**
-At the top of the hierarchy, the Application layer brings forth networked applications. From the early days of remote logins and file transfers to the dominance of the World Wide Web, applications have evolved. The client-server architecture, URLs, and application protocols define the user experience and govern the exchange of messages over the network.
+1. **Holiday Trip Analogy:**
+   - Compares the routing of packets to planning a holiday trip with multiple transportation modes (hops).
 
-### **6. Stacking the Layers: Hierarchical Harmony**
-Layers are stacked, with the Application layer at the top and the Link layer at the bottom. This hierarchy ensures each layer leverages those above and below, simplifying the complex process of data transmission. Users interact with applications while routers operate solely at the Internetwork and Link layers.
+2. **Example Journey:**
+   - Describes how, during travel, information about the exact destination becomes clearer as one gets closer.
 
-### **7. Glossary: Decoding Networking Terminology**
-- **Client:** Initiates connections or requests services in a networked application.
-- **Fiber Optic:** High-speed data transmission technology using light over long distances.
-- **Offset:** The relative position of a packet within a data stream.
-- **Server:** Responds to requests for services or waits for incoming connections in a networked application.
-- **Window Size:** The allowed amount of data a sending computer can transmit before waiting for acknowledgment.
+3. **Analogy to Internet Routing:**
+   - Similar to routers in the Internet, where only routers closest to the destination have precise information about the path.
 
-### **8. Conclusion: Navigating the Layers**
-Understanding the intricacies of the Link, Internetwork, Transport, and Application layers is paramount for anyone delving into computer networking. As we navigate through these layers, we unravel the complexities that facilitate the seamless exchange of information across the vast landscape of the Internet. In the upcoming discussions, we will delve deeper into each layer, uncovering their specific functionalities and the protocols that make them integral components of the interconnected digital world.
+![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/6b5bb49b-06e9-430f-bfa9-c7100abed24f)
+
+
+### **Adaptability to Changes:**
+
+1. **Handling Unexpected Issues:**
+   - Acknowledges that unexpected issues or delays may occur during packet transmission, requiring a change in plans.
+
+2. **Router Adaptation:**
+   - Routers exchange messages to inform each other of traffic delays or network outages.
+   - Core routers in the Internet are intelligent and quickly adapt to outages or failures, rerouting packets as needed.
+
+3. **Reasons for Network Issues:**
+   - Network slowdowns due to overload, physical damage (e.g., cut wires), or natural disasters like hurricanes.
+
+### **Packet Loss and the Next Layer:**
+
+1. **Dealing with Lost Packets:**
+   - Acknowledges that sometimes packets are lost during transmission.
+   - Teases that the next layer in the architecture addresses the issue of dealing with lost packets.
+
+### **Conclusion:**
+
+The Internet Protocol (IP) is an essential component of the Internetwork Layer and is responsible for directing packets across the Internet. IP follows a sequential method to guide packets based on their destination addresses. This process can be compared to planning a vacation trip, where the routers progressively move closer to the final destination. The layer also emphasizes the adaptability of routers to unexpected problems and introduces the concept of handling lost packets in the following layer of the architecture.
