@@ -330,3 +330,8 @@ The layer stacking provides a hierarchical representation that emphasizes the in
 
 5. **Window Size:**
    - The amount of data that the sending computer is allowed to send before waiting for an acknowledgment.
+  
+------------------------------
+# **Chapter 3 Link Layer**
+
+![image](https://github.com/MahmoudNamNam/Networking/assets/148398760/fd960219-61e3-47a2-9ba6-bcbebeba305f)
