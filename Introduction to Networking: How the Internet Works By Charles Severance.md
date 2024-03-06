@@ -3,7 +3,7 @@
 
 # **Chapter 2 Network Architecture**
 
-### **Network Architecture Overview: Four-Layer TCP/IP Model**
+## **Network Architecture Overview: Four-Layer TCP/IP Model**
 
 To design and construct a complex system like the Internet, engineers adopt an approach of breaking down the overarching problem into smaller, manageable subproblems. The architects of the initial internets identified **four** fundamental areas of engineering, each addressing a specific aspect of the network. These areas are named and organized into layers, forming the foundation of the Internet architecture:
 
@@ -43,7 +43,7 @@ To design and construct a complex system like the Internet, engineers adopt an a
 In the subsequent sections, each layer will be examined in more detail, starting from the bottom layer (Link layer).
 
 
-### **2.1 Link Layer Overview:**
+## **2.1 Link Layer Overview:**
 1. **Responsibility:**
    - Connects the computer to the local network and facilitates data movement across a single hop.
 
@@ -103,7 +103,7 @@ In the subsequent sections, each layer will be examined in more detail, starting
 
 
 -----------
-### **2.2 Internetwork Layer (IP) Overview:**
+## **2.2 Internetwork Layer (IP) Overview:**
 
 1. **Role of Routers:**
    - The Internetwork Layer, represented by IP (Internet Protocol), comes into play once a packet reaches a router.
@@ -130,7 +130,7 @@ In the subsequent sections, each layer will be examined in more detail, starting
 ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/6b5bb49b-06e9-430f-bfa9-c7100abed24f)
 
 
-### **Adaptability to Changes:**
+## **Adaptability to Changes:**
 
 1. **Handling Unexpected Issues:**
    - Acknowledges that unexpected issues or delays may occur during packet transmission, requiring a change in plans.
@@ -154,7 +154,7 @@ The Internet Protocol (IP) is an essential component of the Internetwork Layer a
 
 -----
 
-### **2.3 Transport Layer (TCP) Overview:**
+## **2.3 Transport Layer (TCP) Overview:**
 
 1. **Purpose:**
    - The Transport Layer, represented by TCP (Transmission Control Protocol), deals with the reliable delivery of packets over the Internet.
@@ -210,7 +210,7 @@ TCP, operating at the Transport Layer, ensures reliable packet delivery by addre
 
 ----
 
-### **2.4 Application Layer Overview:**
+## **2.4 Application Layer Overview:**
 
 1. **Collaboration of Layers:**
    - The Link, Internetwork, and Transport layers collaborate to efficiently move data across shared networks.
@@ -264,7 +264,7 @@ The Application Layer is responsible for developing and utilizing networked appl
 
 -----
 
-### **2.5 Layer Stacking Overview:**
+## **2.5 Layer Stacking Overview:**
 
 1. **Hierarchical Representation:**
    - The four layers (Link, Internetwork, Transport, and Application) are typically depicted in a stacked manner, with Application at the top and Link at the bottom.
@@ -314,7 +314,7 @@ The Application Layer is responsible for developing and utilizing networked appl
 The layer stacking provides a hierarchical representation that emphasizes the interconnected functionality of the Link, Internetwork, Transport, and Application layers. Users interact with applications at the top layer, while the lower layers handle the physical connection and routing of packets. The layered network model simplifies application development by allowing developers to focus on the Transport layer, without being concerned about the lower-layer intricacies. In future discussions, we'll explore each layer in more detail.
 
 ----
-### **Glossary:**
+## **Glossary:**
 
 1. **Client:**
    - In a networked application, the client is the application that requests services or initiates connections.
