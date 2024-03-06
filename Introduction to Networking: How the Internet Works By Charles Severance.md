@@ -76,7 +76,7 @@ In the subsequent sections, each layer will be examined in more detail, starting
 3. **After Transmission:**
    - After sending a packet, a computer pauses to allow other waiting computers a chance to send data.
    - If another computer senses the pause and starts sending, the original computer waits until the transmission is complete before attempting to send again. 🔄🎤🚦
-    ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/bd9eeff2-900a-4477-b3cc-b6e9f7500c7c)
+ ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/bd9eeff2-900a-4477-b3cc-b6e9f7500c7c)
     
 ### **Shared and Non-Shared Link Layers:**
 1. **Shared Connections:**
@@ -143,7 +143,7 @@ In the subsequent sections, each layer will be examined in more detail, starting
 
 ### **Conclusion:**
 
-The Internet Protocol (IP) is an essential component of the Internetwork Layer and is responsible for directing packets across the Internet. IP follows a sequential method to guide packets based on their destination addresses. This process can be compared to planning a vacation trip, where the routers progressively move closer to the final destination. The layer also emphasizes the adaptability of routers to unexpected problems and introduces the concept of handling lost packets in the following layer of the architecture. 🔄🌐🛣️
+The Internet Protocol (IP) is an essential component of the Internet layer and is responsible for directing packets across the Internet. IP follows a sequential method to guide packets based on their destination addresses. This process can be compared to planning a vacation trip, where the routers progressively move closer to the final destination. The layer also emphasizes the adaptability of routers to unexpected problems and introduces the concept of handling lost packets in the following layer of the architecture. 🔄🌐🛣️
 -----
 
 ## **2.3 Transport Layer (TCP) Overview:**
@@ -481,3 +481,49 @@ The Link layer, being the closest to the physical network media, is responsible 
 ### **Conclusion:**
 
 The coordination method of "Carrier Sense Multiple Access with Collision Detection" (CSMA/CD) ensures effective communication in WiFi networks. By listening before transmitting and detecting collisions, WiFi radios manage to avoid conflicts and efficiently handle the challenges posed by shared frequencies. The analogy to human conversations highlights the practical challenges and solutions employed in wireless communication. 📡🔄🔒
+
+
+----
+
+### **3.3 Coordination in Other Link Layers:**
+
+1. **Alternative Approach for High Efficiency:**
+   - In link layers with numerous transmitting stations requiring near 100% efficiency, a token-based approach is adopted for coordination. 🔄🔗🚀
+
+2. **Token System:**
+   - A "token" circulates among stations, indicating when each station has the opportunity to transmit data.
+   - Stations can only initiate transmission when in possession of the token. 🔄🔗🎫
+
+3. **Token Passing Procedure:**
+   - When a station receives the token and has data to send, it transmits the packet.
+   - After transmission, the station relinquishes the token and waits for it to circulate back.
+   - If no stations have data, the token swiftly moves from one station to the next. 🔄📡🎫
+
+4. **Analogy to Passing a Ball in a Meeting:**
+   - Analogous to a group in a meeting passing around a small ball, allowing only the person holding the ball to speak. 🔄🗣️⚽
+  
+ ![image](https://github.com/MahmoudNamNam/Networking/assets/148398760/4b795ee0-6007-4a70-99ad-4bbdec3484bc)
+
+
+### **Comparison with CSMA/CD:**
+
+1. **CSMA/CD vs. Token-Based Approach:**
+   - CSMA/CD (listen-try) works well when there is low or moderate data, adapting to the absence of data.
+   - Token approach requires waiting for the token, limiting efficiency when only one station wants to send data. 🔄📶🆚🔄🔗🚫
+
+2. **Token's Impact on Waiting Time:**
+   - In token-based networks, if a station is the sole sender, it spends significant time waiting for the token to circulate back after passing through all stations. ⌛🔄🎫
+
+### **Suitability of Token Approach:**
+
+1. **Ideal Mediums for Token System:**
+   - Token approach is suitable for link mediums like satellite or undersea fiber optic links.
+   - Useful when detecting collisions might be time-consuming or expensive. 📡🔄🛰️
+
+2. **CSMA/CD for Bursty Short-Distance Data:**
+   - CSMA/CD (listen-try) is effective for shorter distances, inexpensive mediums, and scenarios with many stations sharing the medium in short bursts.
+   - WiFi, using CSMA/CD, is highly effective in places like coffee shops, homes, or school rooms. 📶🔄🏠
+
+### **Conclusion:**
+
+The choice between token-based coordination and CSMA/CD depends on the specific characteristics of the link layer and the network environment. Token systems are advantageous for high-efficiency scenarios, particularly over longer distances or expensive mediums. In contrast, CSMA/CD excels in providing effective network access in settings with numerous stations sharing the medium in short bursts, such as WiFi in everyday spaces. 🔄🔗🤔
