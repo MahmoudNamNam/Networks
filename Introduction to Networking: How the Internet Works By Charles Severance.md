@@ -151,3 +151,113 @@ In the subsequent sections, each layer will be examined in more detail, starting
 ### **Conclusion:**
 
 The Internet Protocol (IP) is an essential component of the Internetwork Layer and is responsible for directing packets across the Internet. IP follows a sequential method to guide packets based on their destination addresses. This process can be compared to planning a vacation trip, where the routers progressively move closer to the final destination. The layer also emphasizes the adaptability of routers to unexpected problems and introduces the concept of handling lost packets in the following layer of the architecture.
+
+-----
+
+### **2.3 Transport Layer (TCP) Overview:**
+
+1. **Purpose:**
+   - The Transport Layer, represented by TCP (Transmission Control Protocol), deals with the reliable delivery of packets over the Internet.
+
+2. **Handling Packet Issues:**
+   - Acknowledges that packets may get lost, delayed, or arrive out of order during transmission.
+
+3. **Packet Contents:**
+   - Each packet contains the source and destination computer's addresses and an offset indicating its position relative to the beginning of the message.
+
+4. **Reconstruction at Destination:**
+   - The destination computer reconstructs the original message using packet offsets and lengths, even if received out of order.
+
+### **Acknowledgment and Resending:**
+
+1. **Acknowledgment Process:**
+   - The destination periodically sends acknowledgments to the source indicating how much of the message it has received and reconstructed.
+
+2. **Detecting Missing Parts:**
+   - If parts of the reconstructed message are missing, indicating lost or badly delayed packets, the destination requests the source to resend the missing data.
+
+### **Flow Control:**
+
+1. **Data Storage at Source:**
+   - The source computer stores sent message parts until acknowledgment of successful receipt is received from the destination.
+
+2. **Window Size:**
+   - The amount of data sent before waiting for acknowledgment is called the "window size."
+  
+3. **Optimizing Window Size:**
+   - To avoid slowing down transmission or overloading the network, the window size is adjusted.
+   - Initially kept small, and adjusted based on the speed of acknowledgments.
+
+### **Adapting to Network Conditions:**
+
+1. **Network Load Consideration:**
+   - Window size adjustment based on network conditions prevents overloading routers or communication lines.
+
+2. **Courtesy on the Internet:**
+   - Similar to Link layer, practicing courtesy on the Internet helps ensure efficient use of shared network infrastructure.
+
+### **Network Speed Adaptation:**
+
+1. **High-Speed Connections:**
+   - In high-speed and lightly loaded networks, data is sent quickly.
+  
+2. **Slow or Heavily Loaded Connections:**
+   - In slow or heavily loaded networks, data transmission is slowed down to match connection limitations.
+
+### **Conclusion:**
+
+TCP, operating at the Transport Layer, ensures reliable packet delivery by addressing issues such as packet loss, delay, and out-of-order arrival. The acknowledgment process, window size adjustment, and consideration of network conditions contribute to the efficient and adaptive transmission of data over the Internet. Practicing courtesy in data transmission helps maintain the integrity of the shared network infrastructure.
+
+----
+
+### **2.4 Application Layer Overview:**
+
+1. **Collaboration of Layers:**
+   - The Link, Internetwork, and Transport layers collaborate to efficiently move data across shared networks.
+
+2. **Purpose of Application Layer:**
+   - Focuses on the development and use of networked applications that utilize reliable data connections.
+
+### **Evolution of Networked Applications:**
+
+1. **Early Internet Applications (1980s):**
+   - Logging into remote computers, file transfers, email, and real-time text chats were among the first widely used networked applications.
+
+2. **Emergence of World Wide Web (1990s):**
+   - With improved computer capabilities, the World Wide Web (WWW) application became prominent.
+   - Originally focused on reading and editing networked hypertext documents with images.
+
+3. **Dominance of Web Application:**
+   - Today, the web is the most common and widely used network application globally.
+   - Older Internet applications like remote logins, file transfers, and email continue to be in use.
+
+### **Client-Server Architecture:**
+
+1. **Application Components:**
+   - Each application is typically divided into two halves: the "server" and the "client."
+
+2. **Server and Client Roles:**
+   - The server runs on the destination computer, waiting for incoming network connections.
+   - The client runs on the source computer, making connections to servers and displaying content.
+
+3. **Web Browsing Example:**
+   - Web browsers (e.g., Firefox, Chrome, Internet Explorer) function as web clients, making connections to web servers and displaying content.
+   - URLs in the browser's address bar represent the web servers contacted by the client to retrieve documents.
+
+### **Application Protocol Definition:**
+
+1. **Necessity of Application Protocols:**
+   - Developing a networked application involves defining an "application protocol."
+   - Describes how the server and client halves of the application exchange messages over the network.
+
+2. **Specialized Protocols:**
+   - Application layer protocols are specialized to meet the unique needs of each application.
+
+### **Future Exploration:**
+
+1. **Upcoming Exploration:**
+   - Future exploration will delve into specific Application layer protocols.
+
+### **Conclusion:**
+
+The Application Layer is responsible for developing and utilizing networked applications that take advantage of the effective data transfer facilitated by the lower layers. As time has passed, the kinds of applications have changed, with the web becoming the most widespread. The client-server architecture is a prevalent model, with particular application protocols designed to satisfy the unique needs of each application.
