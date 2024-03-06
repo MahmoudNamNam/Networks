@@ -261,3 +261,72 @@ TCP, operating at the Transport Layer, ensures reliable packet delivery by addre
 ### **Conclusion:**
 
 The Application Layer is responsible for developing and utilizing networked applications that take advantage of the effective data transfer facilitated by the lower layers. As time has passed, the kinds of applications have changed, with the web becoming the most widespread. The client-server architecture is a prevalent model, with particular application protocols designed to satisfy the unique needs of each application.
+
+-----
+
+### **2.5 Layer Stacking Overview:**
+
+1. **Hierarchical Representation:**
+   - The four layers (Link, Internetwork, Transport, and Application) are typically depicted in a stacked manner, with Application at the top and Link at the bottom.
+
+2. **Interconnected Functionality:**
+   - Each layer utilizes the layers both above and below it for effective network communication.
+
+3. **Layer Implementation:**
+   - All four layers run on both the source and destination computers involved in communication.
+
+4. **User Interaction:**
+   - End users interact with applications at the top layer, while the bottom layer represents the physical connection (WiFi, cellular, or wired) to the Internet.
+
+### **Role of Each Layer:**
+
+1. **User Interaction:**
+   - Users interact with applications in the top layer (e.g., browser), making up the application layer.
+
+2. **Connection to the Internet:**
+   - The bottom layer represents the physical connection between the user's computer and the broader Internet.
+
+3. **Router Functionality:**
+   - Routers operate at the Internetwork and Link layers, forwarding packets based on Internetwork layer addresses.
+
+### **Layer Independence for Application Development:**
+
+1. **Computer Operation:**
+   - All four layers operate on both the client and server computers.
+
+2. **End-User Interaction:**
+   - Users interact with the top layer, while the bottom layer signifies the connection type to the Internet.
+
+3. **Routers and Layers:**
+   - Routers, responsible for forwarding packets, operate without understanding the Transport and Application layers.
+
+### **Development Perspective:**
+
+1. **Networked Application Development:**
+   - When developing a networked application, focus is primarily on the Transport layer.
+   - Unconcerned about lower-layer details, allowing for simplified program development.
+
+2. **Layered Network Model Advantage:**
+   - The layered network model simplifies the development of networked applications by abstracting complex details of data movement.
+
+### **Conclusion:**
+
+The layer stacking provides a hierarchical representation that emphasizes the interconnected functionality of the Link, Internetwork, Transport, and Application layers. Users interact with applications at the top layer, while the lower layers handle the physical connection and routing of packets. The layered network model simplifies application development by allowing developers to focus on the Transport layer, without being concerned about the lower-layer intricacies. In future discussions, we'll explore each layer in more detail.
+
+----
+### **Glossary:**
+
+1. **Client:**
+   - In a networked application, the client is the application that requests services or initiates connections.
+
+2. **Fiber Optic:**
+   - A data transmission technology that encodes data using light and sends it down a very long strand of thin glass or plastic. Fiber optic connections are fast and can cover long distances.
+
+3. **Offset:**
+   - The relative position of a packet within an overall message or stream of data.
+
+4. **Server:**
+   - In a networked application, the server is the application that responds to requests for services or waits for incoming connections.
+
+5. **Window Size:**
+   - The amount of data that the sending computer is allowed to send before waiting for an acknowledgment.
