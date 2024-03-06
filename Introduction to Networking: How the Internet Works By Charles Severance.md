@@ -42,6 +42,64 @@ To design and construct a complex system like the Internet, engineers adopt an a
 
 In the subsequent sections, each layer will be examined in more detail, starting from the bottom layer (Link layer).
 
+
+### **2.1 Link Layer Overview:**
+1. **Responsibility:**
+   - Connects the computer to the local network and facilitates data movement across a single hop.
+
+2. **Common Technologies:**
+   - Wireless networking is the predominant technology.
+   - Wireless devices communicate within limited distances, and switching between towers may occur during movement.
+   - Wired connections (e.g., Ethernet cables) are also common, with cables typically under 100 meters.
+
+3. **Shared Networks:**
+   - Link layer technologies are often shared among multiple computers in the same location.
+
+### **Challenges and Solutions:**
+1. **Encoding and Sending Data:**
+   - For wireless connections, agreement on radio frequencies and data encoding.
+   - For wired connections, agreement on voltage and transmission speed.
+   - For fiber optics, agreement on light frequencies and transmission speed.
+
+2. **Cooperation Among Computers:**
+   - Agreement on how to cooperate when multiple computers want to send data simultaneously.
+   - Collision avoidance is crucial to prevent chaos and noise on the network.
+
+### **Carrier Sense Multiple Access with Collision Detection (CSMA/CD):**
+1. **Objective:**
+   - Enable fair sharing of the network among multiple computers.
+
+2. **Process:**
+   - Before sending data, a computer listens (carrier sense) to check if the network is clear.
+   - If the network is clear, the computer starts sending its data.
+   - The computer listens while sending to detect collisions.
+   - In the event of a collision, both computers stop, wait, and retry transmission after different waiting periods.
+   - ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/bd9eeff2-900a-4477-b3cc-b6e9f7500c7c)
+
+
+3. **After Transmission:**
+   - After sending a packet, a computer pauses to allow other waiting computers a chance to send data.
+   - If another computer senses the pause and starts sending, the original computer waits until the transmission is complete before attempting to send again.
+
+### **Shared and Non-Shared Link Layers:**
+1. **Shared Connections:**
+   - Technologies like cellular, WiFi, satellite, and cable modem use CSMA/CD for fair access.
+   - Multiple computers share the same network connection.
+
+2. **Non-Shared Connections:**
+   - Fiber optic cables and leased lines are generally not shared.
+   - Used for connections between routers, forming part of the Link layer.
+
+### **Transmission Across Multiple Links (Hops):**
+   - To move data over long distances, it passes through multiple routers connected by various link layers.
+   - Each transition from one router to another is referred to as a "hop."
+
+### **Conclusion:**
+   - Link layer technologies focus on enabling the transmission of data across a single link, ranging from short distances to hundreds of kilometers.
+   - For longer distances, data passes through multiple routers, and each transition between routers is considered a hop.
+
+
+
 -----------
 In the intricate world of computer networking, understanding the layers that facilitate seamless communication between devices is essential. This article provides a comprehensive exploration of the Link, Internetwork, Transport, and Application layers, shedding light on their roles, interactions, and the technologies that underpin them.
 
