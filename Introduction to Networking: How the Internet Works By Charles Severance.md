@@ -76,7 +76,8 @@ In the subsequent sections, each layer will be examined in more detail, starting
 3. **After Transmission:**
    - After sending a packet, a computer pauses to allow other waiting computers a chance to send data.
    - If another computer senses the pause and starts sending, the original computer waits until the transmission is complete before attempting to send again. 🔄🎤🚦
- ![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/bd9eeff2-900a-4477-b3cc-b6e9f7500c7c)
+
+![image](https://github.com/MahmoudNamNam/Networks/assets/148398760/bd9eeff2-900a-4477-b3cc-b6e9f7500c7c)
     
 ### **Shared and Non-Shared Link Layers:**
 1. **Shared Connections:**
