@@ -20,5 +20,6 @@
 - **Speed and Cost**: Fast data transmission with relatively inexpensive hardware.
 
 ### Metropolitan Area Network (MAN)
+![image](https://github.com/MahmoudNamNam/Networking/assets/148398760/f5c20438-2789-4bcb-94f1-50dbec03e485)
 
 covers a **larger area than a LAN but smaller than a WAN**, connecting computers and devices across cities. MANs can be costly to establish and maintain and may not be owned by a single organization. They offer moderate data transfer rates and propagation delay, using devices like `modems and cables` for data transmission. 
