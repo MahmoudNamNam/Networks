@@ -7,9 +7,11 @@
 
 ## What are Network Types?
 ### Local Area Network (LAN)
-<p align="center">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fneosnetworks.com%2Fresources%2Fblog%2Fwhat-is-lan-local-area-network%2F&psig=AOvVaw1NnfncSJtw3GrhR1IfeBnU&ust=1715889880969000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjo54i6kIYDFQAAAAAdAAAAABAJ" alt="Image Description" width="width_value">
-</p>
+![image](https://github.com/MahmoudNamNam/Networking/assets/148398760/1798295c-7660-4606-bb2e-b033f2d42fb8)
+
+<div style="text-align:center">
+  <img src="https://raw.githubusercontent.com/MahmoudNamNam/Networking/assets/148398760/1798295c-7660-4606-bb2e-b033f2d42fb8" alt="Image Description" width="400">
+</div>
 
 
 - **Local Area Network (LAN)**: Connects devices within a limited geographical area for data, tool, and program sharing.
