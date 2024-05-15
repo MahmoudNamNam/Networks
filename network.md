@@ -9,9 +9,6 @@
 ### Local Area Network (LAN)
 ![image](https://github.com/MahmoudNamNam/Networking/assets/148398760/1798295c-7660-4606-bb2e-b033f2d42fb8)
 
-<div style="text-align:center">
-  <img src="https://raw.githubusercontent.com/MahmoudNamNam/Networking/assets/148398760/1798295c-7660-4606-bb2e-b033f2d42fb8" alt="Image Description" width="400">
-</div>
 
 
 - **Local Area Network (LAN)**: Connects devices within a limited geographical area for data, tool, and program sharing.
