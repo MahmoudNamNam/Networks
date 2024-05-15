@@ -10,8 +10,12 @@
 
 - **Local Area Network (LAN)**: Connects devices within a limited geographical area for data, tool, and program sharing.
 
-- **Network Setup**: Interconnected using switches with private addressing via TCP/IP protocol.
+- **Network Setup**: Interconnected using `switches` with private addressing via `TCP/IP` protocol.
 
 - **Geographical Coverage**: Typically covers a few kilometers and is privately owned and managed.
 
 - **Speed and Cost**: Fast data transmission with relatively inexpensive hardware.
+
+### Metropolitan Area Network (MAN)
+
+covers a **larger area than a LAN but smaller than a WAN**, connecting computers and devices across cities. MANs can be costly to establish and maintain and may not be owned by a single organization. They offer moderate data transfer rates and propagation delay, using devices like `modems and cables` for data transmission. 
